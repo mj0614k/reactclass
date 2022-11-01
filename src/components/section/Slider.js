@@ -5,7 +5,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-function Slider() {
+const sliderText = {
+  subTitle: "ANIMAL",
+  title: "CUTE ANIMAL",
+  desc1: "숙제에 지친 이들을 위한 힐링 공간입니다.",
+  desc2: "귀여운 동물들을 보며 잠시나마 현실도피를 합시다.",
+  btnLink: "/",
+  siteLink: "/",
+};
+
+function Slider(props) {
   return (
     <section id="sliderType" class="slider__inner nexon">
       <div className="slider__inner">
@@ -21,16 +30,16 @@ function Slider() {
         >
           <SwiperSlide>
             <div class="desc">
-              <span>ANIMAL</span>
-              <h3>CUTE ANIMAL</h3>
+              <span>{sliderText.subTitle}</span>
+              <h3>{sliderText.title}</h3>
               <p>
-                숙제에 지친 이들을 위한 힐링 공간입니다.
-                <br />
-                귀여운 동물들을 보며 잠시나마 현실도피를 합시다.
+                {sliderText.desc1}
+                <br></br>
+                {sliderText.desc2}
               </p>
               <div class="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" class="black">
+                <a href={`${sliderText.btnLink}`}>자세히 보기</a>
+                <a href={`${sliderText.siteLink}`} class="black">
                   사이트 보기
                 </a>
               </div>
@@ -38,16 +47,16 @@ function Slider() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="desc">
-              <span>ANIMAL</span>
-              <h3>CUTE ANIMAL</h3>
+              <span>{sliderText.subTitle}</span>
+              <h3>{sliderText.title}</h3>
               <p>
-                숙제에 지친 이들을 위한 힐링 공간입니다.
-                <br />
-                귀여운 동물들을 보며 잠시나마 현실도피를 합시다.
+                {sliderText.desc1}
+                <br></br>
+                {sliderText.desc2}
               </p>
               <div class="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" class="black">
+                <a href={`${sliderText.btnLink}`}>자세히 보기</a>
+                <a href={`${sliderText.siteLink}`} class="black">
                   사이트 보기
                 </a>
               </div>
@@ -55,16 +64,16 @@ function Slider() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="desc">
-              <span>ANIMAL</span>
-              <h3>CUTE ANIMAL</h3>
+              <span>{sliderText.subTitle}</span>
+              <h3>{sliderText.title}</h3>
               <p>
-                숙제에 지친 이들을 위한 힐링 공간입니다.
-                <br />
-                귀여운 동물들을 보며 잠시나마 현실도피를 합시다.
+                {sliderText.desc1}
+                <br></br>
+                {sliderText.desc2}
               </p>
               <div class="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" class="black">
+                <a href={`${sliderText.btnLink}`}>자세히 보기</a>
+                <a href={`${sliderText.siteLink}`} class="black">
                   사이트 보기
                 </a>
               </div>
